@@ -89,20 +89,21 @@
     </resources>
    
    		<plugins>
-   		  <pligin>
-  			<groupId>org.maven.plugins</groupId>
-  			<artifactId>maven-assembly-plugin</artifactId>
-   		  <executions>
-      	   <execution>
-            <goals>
-            	<goal>attached</goal>
-        	   </goals>
-             <phase>package</phase>
-           <configuration>
-            <descriptorRefs>
-              <descriptorRef>jar-with-dependencies</descriptorRef>
-             </descriptorRefs>
-          <archive>
+   		  <plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+  			 <artifactId>maven-assembly-plugin</artifactId>
+  			  
+   		        <executions>
+      	         <execution>
+                  <goals>
+                   <goal>attached</goal>
+        	        </goals>
+                     <phase>package</phase>
+                      <configuration>
+                    <descriptorRefs>
+                  <descriptorRef>jar-with-dependencies</descriptorRef>
+                </descriptorRefs>
+               <archive>
             <manifest>
            <mainClass>rentMotorbike.Main</mainClass>
           </manifest>
@@ -110,7 +111,7 @@
         </configuration>
        </execution>
       </executions>
-     </pligin>
+     </plugin>
      
       <plugin>
          <groupId>org.apache.maven.plugins</groupId>
