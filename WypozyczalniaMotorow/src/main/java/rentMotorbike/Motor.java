@@ -1,7 +1,27 @@
 package rentMotorbike;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+
+
+@Entity
 public class Motor implements ToMotor {
 	
+	@Id
+	@GeneratedValue
+	private int id;
+	
+	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
 	public String name;
 	public String engineVolume;
 	public String maker;

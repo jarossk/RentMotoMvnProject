@@ -20,10 +20,9 @@
    
     <property name="hbm2ddl.auto">update</property>
    
-    <mapping class="com.pl.adam.projectfiles.Car" />
-    <mapping class="com.pl.adam.projectfiles.Vehicle" />
-    <mapping class="com.pl.adam.projectfiles.Person" />
-    <mapping class="com.pl.adam.listeners.Garage" />
+    <mapping class="rentMotorbike.Motor" />
+    <mapping class="rentMotorbike.Client" />
+   
     </session-factory>
 </hibernate-configuration>
    

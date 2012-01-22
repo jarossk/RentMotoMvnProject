@@ -3,15 +3,26 @@ package rentMotorbike;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 import org.apache.log4j.*;
 
 
+@Entity
 public class Client {
+	
+	@Id
+	@GeneratedValue
+	private int id;
 	
 	private static Logger myLogger = Logger.getLogger(Client.class);
 	
 	String name;
 	String surename;
+	
 	List<Motor> MotorList;
 	
 	public Client (String name, String surename, List<Motor> MotorList) {
